@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex justify-center items-center w-full px-10 font-inter">
+        <div class="flex justify-center items-center flex-col w-mobile h-mobile bg-[#F6F7FA]">
+            <img src="assets/logo.png" alt="Logo ebid" class="mb-1">
+            <p class="text-lg text-ebid-purple mb-20 font-SF">Create an Account</p>
+            <div class="flex flex-col space-y-3.5 w-80">
+                <input type="text" placeholder="Name" class="input py-4 pl-4 rounded-lg shadow-md">
+                <input type="text" placeholder="Email" class="input py-4 pl-4 rounded-lg shadow-md">
+                <input type="text" placeholder="Password" class="input py-4 pl-4 rounded-lg shadow-md">
+                <button
+                    class="rounded-full bg-ebid-orange py-4 items-center justify-center text-white font-semibold text-base">Sign
+                    up</button>
+            </div>
+        </div>
+        <div id="first-screen"
+            class="absolute flex justify-center items-center flex-col w-mobile h-mobile bg-ebid-orange">
+            <img src="assets/logo.png" alt="Logo ebid" class="mb-1" id="logo-splash">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" animate></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/CSSRulePlugin.min.js"
+        integrity="sha512-9BAIrJcd9W75AJsWgJTfaoRkdbk2EI92JkWWsnRx6+T8NfqrIFNrb22stBpB4ii+cbgbUG24d5BPyl4JMAw5aw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" animate></script>
+    <script src="js/animate.js"></script>
+</body>
+
+</html>
