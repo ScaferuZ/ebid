@@ -1,7 +1,7 @@
-// const route = (e) => {
-//   e = e || window.e;
-//   e.preventDefault();
-//   window.history.pushState({}, e.target.href);
+// const route = (element) => {
+//   element = element || window.element;
+//   element.preventDefault();
+//   window.history.pushState({}, element.target.href);
 //   handleLocation();
 // };
 

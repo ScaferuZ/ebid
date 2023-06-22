@@ -9,7 +9,12 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
-        SF: ["-apple-system", "BlinkMacSystemFont", "sans-serif"],
+        SF: [
+          "SF Pro Display",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "sans-serif",
+        ],
       },
       colors: {
         "ebid-orange": "#FF8E18",
