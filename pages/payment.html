@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex justify-center items-center w-full px-10 font-inter" data-barba="wrapper">
+        <div class="flex justify-start items-center flex-col w-mobile h-mobile bg-[#F6F7FA]" data-barba="container"
+            data-barba-namespace="address">
+            <!-- header -->
+            <div class="flex  bg-auto bg-bottom bg-no-repeat w-full h-36" id="payment_head"
+                style="background-image: url(../assets/bg1.svg);">
+                <div class="mt-16 flex justify-between mx-[31px]">
+                    <a href="address.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" class="mr-[47px]"
+                            viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#ffffff">
+                                    <path
+                                        d="M93.16667,42.49609l-43.50391,43.50391l43.50391,43.5039l10.75,-10.75l-32.75391,-32.7539l32.75391,-32.75391z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <p class="justify-self-end font-SF text-white text-xl font-semibold ">Add Payment Method</p>
+
+                </div>
+            </div>
+            <!-- card number-->
+            <div class="flex flex-col space-y-3.5 w-80 mt-6" id="payment_1">
+                <label>
+                    <span class="font-bold text-black text-sm">Card Number</span>
+                </label>
+                <input type="text" placeholder="0012 XXXX XXXX XXX" class="input py-4 pl-4 rounded-lg shadow-md">
+            </div>
+            <!-- expiry date-->
+            <div class="flex flex-row justify-between items-center  w-80 mt-8" id="payment_1">
+                <div class="flex flex-col">
+                    <label>
+                        <span class="font-bold text-black text-sm">Expiry date</span>
+                    </label>
+                    <input type="text" placeholder="MM/YY" class="input py-4 pl-4 rounded-lg shadow-md w-36">
+                </div>
+                <div class="flex flex-col">
+                    <label>
+                        <span class="font-bold text-black text-sm">CVC/CVV</span>
+                    </label>
+                    <input type="password" placeholder="•••" class="input py-4 pl-4 rounded-lg shadow-md w-36">
+                </div>
+            </div>
+            <!-- card holder name -->
+            <div class="flex flex-col space-y-3.5 w-80 mt-6" id="payment_1">
+                <label>
+                    <span class="font-bold text-black text-sm">Card Holder Name</span>
+                </label>
+                <input type="text" placeholder="Enter Name" class="input py-4 pl-4 rounded-lg shadow-md">
+            </div>
+            <!-- Billing Address 1 -->
+            <div class="flex flex-col space-y-3.5 w-80 mt-6" id="payment_2">
+                <label>
+                    <span class="font-bold text-black text-sm">Biling Address 1</span>
+                </label>
+                <input type="text" placeholder="Enter address line 1" class="input py-4 pl-4 rounded-lg shadow-md">
+            </div>
+            <!-- Billing Address 2 -->
+            <div class="flex flex-col space-y-3.5 w-80 mt-6" id="payment_2">
+                <label>
+                    <span class="font-bold text-black text-sm">Biling Address 2</span>
+                </label>
+                <input type="text" placeholder="Enter address line 2" class="input py-4 pl-4 rounded-lg shadow-md">
+            </div>
+            <a href="main.html" id="payment_save"
+                class="w-80 rounded-full flex bg-ebid-purple py-4 items-center justify-center mt-28">
+                <button class="items center justify-center text-white font-semibold text-base">Save card
+                </button>
+            </a>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" animate></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/CSSRulePlugin.min.js"
+        integrity="sha512-9BAIrJcd9W75AJsWgJTfaoRkdbk2EI92JkWWsnRx6+T8NfqrIFNrb22stBpB4ii+cbgbUG24d5BPyl4JMAw5aw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" animate></script>
+    <script src="../js/payment.js"></script>
+</body>
+
+</html>
