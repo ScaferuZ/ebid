@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="flex justify-center items-center w-full px-10 font-inter" data-barba="wrapper">
+        <div class="flex justify-start items-center flex-col w-mobile h-mobile bg-[#F6F7FA]" data-barba="container"
+            data-barba-namespace="address">
+            <!-- header -->
+            <div class="flex flex-col bg-auto bg-bottom w-full h-72" id="payment_head"
+                style="background-image: url(../assets/bg2.svg);">
+                <div class="mt-20 w-full flex justify-between mx-[31px]">
+                    <img src="../assets/logo.png" alt="" class="w-14 h-14">
+                    <div class="flex items-center justify-center w-14 h-14 bg-ebid-purple rounded-md mr-[62px]">
+                        <img src="../assets/bag.svg" alt="" class="w-6 h-6 text-white">
+                    </div>
+                </div>
+                <form class="w-[369px] m-[31px]">
+                    <label for="default-search"
+                        class="mb-2 text-sm font-medium text-black bg-ebid-orange sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-ebid-orange " fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                        <input type="search" id="default-search"
+                            class="block w-full p-4 pl-10 text-sm text-black border border-gray-300 rounded-full bg-white focus:ring-blue-500 focus:border-blue-500 placeholder-black"
+                            placeholder="Search" required>
+                    </div>
+                </form>
+                <div>a</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" animate></script>
+    <!-- <script src="../js/payment.js"></script> -->
+</body>
+
+</html>

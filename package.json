@@ -1,8 +1,5 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.3.2"
-  },
-  "dependencies": {
-    "@barba/core": "^2.9.7"
   }
 }

@@ -8,9 +8,11 @@
     <title>eBid</title>
 </head>
 
-<body>
-    <div class="flex justify-center items-center w-full px-10 font-inter">
-        <div class="flex justify-center items-center flex-col w-mobile h-mobile bg-[#F6F7FA]">
+<body data-barba="wrapper">
+    <div class="flex justify-center items-center w-full px-10 font-inter" data-barba="container"
+        data-barba-namespace="splash">
+        <div class="flex justify-center items-center flex-col w-mobile h-mobile bg-[#F6F7FA]" data-barba=""
+            data-barba-namespace="splash">
             <img src="assets/logo.png" alt="Logo ebid" class="mb-1">
             <p class="text-lg text-ebid-purple mb-20 font-SF">Create an Account</p>
             <div class="flex flex-col space-y-3.5 w-80">
@@ -35,8 +37,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/CSSRulePlugin.min.js"
         integrity="sha512-9BAIrJcd9W75AJsWgJTfaoRkdbk2EI92JkWWsnRx6+T8NfqrIFNrb22stBpB4ii+cbgbUG24d5BPyl4JMAw5aw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" animate></script>
-    <script src="js/animate.js"></script>
-    <script src="js/router.js"></script>
+    <script src="./js/animate.js"></script>
+
 </body>
 
 </html>
