@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="flex justify-center items-center w-full px-10 font-inter" data-barba="wrapper">
+        <div class="flex justify-start items-center flex-col w-mobile h-mobile bg-[#F6F7FA]" data-barba="container"
+            data-barba-namespace="address">
+            <!-- header -->
+            <div class="flex  bg-auto bg-bottom bg-no-repeat w-full h-36" id="cart_head"
+                style="background-image: url(../assets/bg1.svg);">
+                <div class="mt-16 flex ">
+                    <a href="main.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                            viewBox="0 0 172 172" class="ml-[31px] mr-[116px]" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#ffffff">
+                                    <path
+                                        d="M93.16667,42.49609l-43.50391,43.50391l43.50391,43.5039l10.75,-10.75l-32.75391,-32.7539l32.75391,-32.75391z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <p class=" font-SF text-white text-xl font-semibold ">My Cart</p>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-3.5 w-[350px] mt-6" id="cart_head">
+                <div class="flex items-center mr-4">
+                    <input checked id="yellow-checkbox" type="checkbox" value=""
+                        class="w-4 h-4 text-yellow-400 bg-gray-100 border-gray-300 rounded focus:ring-yellow-500 dark:focus:ring-yellow-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="yellow-checkbox" class="ml-3 text-sm font-medium text-gray-400 ">Select All</label>
+                </div>
+            </div>
+            <!-- ps5 -->
+            <hr id="ps5" class="w-full h-[1px] mx-auto my-6 bg-gray-200 border-0 rounded  dark:bg-gray-700">
+            <div id="ps5" class="flex flex-row  w-[350px] items-center" id="contacts">
+                <div class="flex items-center mr-4">
+                    <input checked id="yellow-checkbox" type="checkbox" value=""
+                        class="w-4 h-4 rounded-full text-yellow-400 bg-gray-100 border-gray-300 focus:ring-yellow-500 dark:focus:ring-yellow-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                </div>
+                <div class="flex items-center bg-white w-[104px] h-[105px] rounded-[10px]">
+                    <img src="../assets/ps5.png" class="p-3">
+                </div>
+                <div class="flex flex-col ml-3 space-y-[11px]">
+                    <h3 class="font-semibold text-sm">PS5 (used)</h3>
+                    <p class="text-ebid-orange font-medium text-xs">1500 MYR</p>
+                    <div class="flex flex-row items-center justify-center">
+                        <button onclick="decrementCounter('data1')"
+                            class="text-white justify-center w-[22px] h-[22px] bg-gray-500  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm p-2 text-center inline-flex items-center mr-2 ">
+                            <i class="far fa-minus"></i>
+                        </button>
+                        <button type="button" id="data1"
+                            class="text-white justify-center shadow-md w-[22px] h-[22px] bg-white  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm p-4 text-center inline-flex items-center mr-2">
+                            <p class="text-black">01</p>
+                        </button>
+                        <button onclick="incrementCounter('data1')"
+                            class="text-white justify-center w-[22px] h-[22px] bg-ebid-orange hover:bg-ebid-orange focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm p-2 text-center inline-flex items-center mr-2 ">
+                            <i class="far fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- nb 2002r-->
+            <hr id="nb" class="w-full h-[1px] mx-auto my-6 bg-gray-200 border-0 rounded  dark:bg-gray-700">
+            <div id="nb" class="flex flex-row  w-[350px] items-center" id="contacts">
+                <div class="flex items-center mr-4">
+                    <input checked id="yellow-checkbox" type="checkbox" value=""
+                        class="w-4 h-4 rounded-full text-yellow-400 bg-gray-100 border-gray-300 focus:ring-yellow-500 dark:focus:ring-yellow-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                </div>
+                <div class="flex items-center bg-white w-[104px] h-[105px] rounded-[10px]">
+                    <img src="../assets/nb.png" class="p-3">
+                </div>
+                <div class="flex flex-col ml-3 space-y-[11px]">
+                    <h3 class="font-semibold text-sm">NB 2002r</h3>
+                    <p class="text-ebid-orange font-medium text-xs">600 MYR</p>
+                    <div class="flex flex-row items-center justify-center">
+                        <button onclick="decrementCounter('data2')"
+                            class="text-white justify-center w-[22px] h-[22px] bg-gray-500  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm p-2 text-center inline-flex items-center mr-2 ">
+                            <i class="far fa-minus"></i>
+                        </button>
+                        <button type="button" id="data2"
+                            class="text-white justify-center shadow-md w-[22px] h-[22px] bg-white  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm p-4 text-center inline-flex items-center mr-2">
+                            <p class="text-black">01</p>
+                        </button>
+                        <button onclick="incrementCounter('data2')"
+                            class="text-white justify-center w-[22px] h-[22px] bg-ebid-orange hover:bg-ebid-orange focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm p-2 text-center inline-flex items-center mr-2 ">
+                            <i class="far fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- shirt black-->
+            <hr id="shirt" class="w-full h-[1px] mx-auto my-6 bg-gray-200 border-0 rounded  dark:bg-gray-700">
+            <div id="shirt" class="flex flex-row  w-[350px] items-center" id="contacts">
+                <div class="flex items-center mr-4">
+                    <input checked id="yellow-checkbox" type="checkbox" value=""
+                        class="w-4 h-4 rounded-full text-yellow-400 bg-gray-100 border-gray-300 focus:ring-yellow-500 dark:focus:ring-yellow-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                </div>
+                <div class="flex items-center bg-white w-[104px] h-[105px] rounded-[10px]">
+                    <img src="../assets/black.png" class="p-3">
+                </div>
+                <div class="flex flex-col ml-3 space-y-[11px]">
+                    <h3 class="font-semibold text-sm">Shirt Black</h3>
+                    <p class="text-ebid-orange font-medium text-xs">26 MYR</p>
+                    <div class="flex flex-row items-center justify-center">
+                        <button onclick="decrementCounter('data3')"
+                            class="text-white justify-center w-[22px] h-[22px] bg-gray-500  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm p-2 text-center inline-flex items-center mr-2 ">
+                            <i class="far fa-minus"></i>
+                        </button>
+                        <button type="button" id="data3"
+                            class="text-white justify-center shadow-md w-[22px] h-[22px] bg-white  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm p-4 text-center inline-flex items-center mr-2 ">
+                            <p class="text-black">01</p>
+                        </button>
+                        <button onclick="incrementCounter('data3')"
+                            class="text-white justify-center w-[22px] h-[22px] bg-ebid-orange hover:bg-ebid-orange focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm p-2 text-center inline-flex items-center mr-2 ">
+                            <i class="far fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <hr id="ttl" class="w-full h-[1px] mx-auto my-10 bg-gray-200 border-0 rounded  dark:bg-gray-700">
+            <div id="ttl" class="flex flex-row justify-between items-center w-96 mt-8 font-semibold text-base"
+                id="payment_1">
+                <p>Total:</p>
+                <p>48 MYR</p>
+            </div>
+            <a id="cart_btn" href="payment.html"
+                class="w-96 rounded-full flex bg-ebid-purple py-4 items-center justify-center mt-10">
+                <button class="items center justify-center text-white font-semibold text-base">Check Out
+                </button>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" animate></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/CSSRulePlugin.min.js"
+        integrity="sha512-9BAIrJcd9W75AJsWgJTfaoRkdbk2EI92JkWWsnRx6+T8NfqrIFNrb22stBpB4ii+cbgbUG24d5BPyl4JMAw5aw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" animate></script>
+    <script src="../js/cart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+</body>
+
+</html>
