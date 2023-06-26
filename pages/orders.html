@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="flex justify-center items-center w-full px-10 font-inter" data-barba="wrapper">
+        <div class="flex justify-start items-center flex-col w-mobile h-mobile bg-[#F6F7FA]" data-barba="container"
+            data-barba-namespace="address">
+            <!-- header -->
+            <div class="flex items-center justify-center  bg-auto bg-bottom bg-no-repeat w-full h-36" id="orders_head"
+                style="background-image: url(../assets/bg1.svg);">
+                <p class=" font-SF text-white text-xl font-semibold mt-7">My Orders</p>
+            </div>
+            <!-- card 1 -->
+            <div id="card1" class="flex flex-col bg-white rounded-2xl mx-6  w-[391px] shadow-md mt-10">
+                <div class="flex flex-row justify-between py-3 px-4 border-b-2">
+                    <p class="text-xs font-medium">Order No: W231FS</p>
+                    <p class="text-xs">14/01/2021</p>
+                </div>
+                <div class="flex flex-col py-3 px-4">
+                    <h3 class="font-semibold text-xs">PS5 (used)</h3>
+                    <div class="flex flex-row justify-between mt-1 items-center">
+                        <p class="text-xs">Qty: <span class="font-semibold">02</span></p>
+                        <p class="text-xs"><span class="font-bold mr-1">Status: </span> Waiting for seller</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div id="card2" class="flex flex-col bg-white rounded-2xl mx-6  w-[391px] shadow-md mt-6">
+                <div class="flex flex-row justify-between py-3 px-4 border-b-2">
+                    <p class="text-xs font-medium">Order No: W232FS</p>
+                    <p class="text-xs">14/01/2021</p>
+                </div>
+                <div class="flex flex-col py-3 px-4">
+                    <h3 class="font-semibold text-xs">Shirt Black</h3>
+                    <div class="flex flex-row justify-between mt-1 items-center">
+                        <p class="text-xs">Qty: <span class="font-semibold">02</span></p>
+                        <p class="text-xs"><span class="font-bold mr-1">Status: </span> Package is on your way</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div id="card3" class="flex flex-col bg-white rounded-2xl mx-6  w-[391px] shadow-md mt-6">
+                <div class="flex flex-row justify-between py-3 px-4 border-b-2">
+                    <p class="text-xs font-medium">Order No: W232FS</p>
+                    <p class="text-xs">14/01/2021</p>
+                </div>
+                <div class="flex flex-col py-3 px-4">
+                    <h3 class="font-semibold text-xs">Shirt Black</h3>
+                    <div class="flex flex-row justify-between mt-1 items-center">
+                        <p class="text-xs">Qty: <span class="font-semibold">02</span></p>
+                        <p class="text-xs"><span class="font-bold mr-1">Status: </span> Package is on your way</p>
+                    </div>
+                </div>
+            </div>
+            <div id="orders_menu" class="mx-[31px] mt-72 bg-ebid-purple w-[391px] h-[78px] rounded-[20px]">
+                <div class="flex flex-row justify-between mx-[49px] py-2">
+                    <a href="main.html" class="flex flex-col justify-center">
+                        <img src="../assets/Home1.svg" alt="home icon">
+                        <p class="font-medium text-xs text-white">HOME</p>
+                    </a>
+                    <a class="flex flex-col justify-center items-center">
+                        <img src="../assets/Order1.svg" class="w-8 h-8" alt="Orders icon">
+                        <p class="font-medium text-xs text-ebid-orange">ORDERS</p>
+                    </a>
+                    <a class="flex flex-col justify-center items-center">
+                        <img src="../assets/User.svg" class="w-8 h-8" alt="Users icon">
+                        <p class="font-medium text-xs text-white">USER</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" animate></script>
+    <script src="../js/orders.js"></script>
+</body>
+
+</html>
