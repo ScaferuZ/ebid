@@ -7,7 +7,9 @@ function incrementCounter(counterId) {
 function decrementCounter(counterId) {
   let countElement = document.getElementById(counterId).querySelector("p");
   let count = parseInt(countElement.textContent);
-  countElement.textContent = count - 1;
+  if (count > 0) {
+    countElement.textContent = count - 1;
+  }
 }
 
 const tl = gsap.timeline();
