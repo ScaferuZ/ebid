@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="flex justify-center items-center w-full px-10 font-inter" data-barba="wrapper">
+        <div class="flex justify-start items-center flex-col w-mobile h-mobile bg-[#F6F7FA]" data-barba="container"
+            data-barba-namespace="address">
+            <!-- header -->
+            <div class="flex bg-auto bg-bottom bg-no-repeat w-full h-36" id="check_head"
+                style="background-image: url(../assets/bg1.svg);">
+                <div class="mt-16 flex ">
+                    <a href="cart.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                            viewBox="0 0 172 172" class="ml-[31px] mr-[116px]" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#ffffff">
+                                    <path
+                                        d="M93.16667,42.49609l-43.50391,43.50391l43.50391,43.5039l10.75,-10.75l-32.75391,-32.7539l32.75391,-32.75391z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <p class=" font-SF text-white text-xl font-semibold ">Checkout</p>
+                </div>
+            </div>
+            <div class="flex flex-col w-[350px] mt-7">
+                <h3 class="mb-4 font-semibold text-black text-xl" id="payment">Payment</h3>
+                <!-- Credit card -->
+                <ul class=" w-full text-sm font-medium text-gray-900" id="payments">
+                    <li>
+                        <div class="flex flex-row-reverse justify-between items-center pl-3">
+                            <input id="orange-radio" type="radio" value="" name="colored-radio"
+                                class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="orange-radio" class="ml-2 mr-44 text-sm text-black font-semibold">Credit
+                                Card</label>
+                            <div class="flex items-center bg-white w-[60px] h-[60px] rounded-[10px] shadow-md">
+                                <img src="../assets/ccard.svg" class="p-3">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Credit card -->
+                <ul class=" w-full text-sm font-medium text-gray-900 mt-4" id="payments">
+                    <li>
+                        <div class="flex flex-row-reverse justify-between items-center pl-3">
+                            <input id="orange-radio" type="radio" value="" name="colored-radio"
+                                class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="orange-radio" class="ml-2 mr-48 text-sm text-black font-semibold">GrabPay
+                            </label>
+                            <div
+                                class="flex items-center justify-center bg-white w-[60px] h-[60px] rounded-[10px] shadow-md">
+                                <img src="../assets/grab.png" class="pt-2">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Credit card -->
+                <ul class=" w-full text-sm font-medium text-gray-900 mt-4" id="payments">
+                    <li>
+                        <div class="flex flex-row-reverse justify-between items-center pl-3">
+                            <input id="orange-radio" type="radio" value="" name="colored-radio"
+                                class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="orange-radio" class="ml-2 mr-44 text-sm text-black font-semibold">Touch n
+                                Go</label>
+                            <div
+                                class="flex items-center justify-center bg-white w-[60px] h-[60px] rounded-[10px] shadow-md">
+                                <img src="../assets/touch.png" class="object-cover pt-1">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col w-[350px] mt-14 space-y-5">
+                <div class="flex flex-row justify-between" id="shipping">
+                    <h3 class="font-semibold text-xl">Shipping Information</h3>
+                    <p class="text-base font-medium text-gray-600">edit</p>
+                </div>
+                <div class="flex flex-col text-sm font-medium text-gray-500 space-y-5" id="shipping_detail">
+                    <p>Ataka Lukman Hamzah</p>
+                    <p>D'Latour Bandary Sunway 47500</p>
+                    <p>+60 17 3587 231</p>
+                </div>
+            </div>
+            <hr class="w-full border-[1px] mt-24" id="ttl_check">
+            <div class="flex flex-row justify-between items-center w-[350px] mt-8 font-semibold text-base"
+                id="ttl_check">
+                <p>Total:</p>
+                <p>48 MYR</p>
+            </div>
+            <a id="pay_btn" href="checkout.html"
+                class="w-96 rounded-full flex bg-ebid-purple py-4 items-center justify-center mt-10">
+                <button class="items center justify-center text-white font-semibold text-base">Check Out
+                </button>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" animate></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/CSSRulePlugin.min.js"
+        integrity="sha512-9BAIrJcd9W75AJsWgJTfaoRkdbk2EI92JkWWsnRx6+T8NfqrIFNrb22stBpB4ii+cbgbUG24d5BPyl4JMAw5aw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" animate></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+    <script src="../js/checkout.js"></script>
+</body>
+
+</html>
