@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <style>
+        .no-border {
+            border: 0 !important;
+        }
+
+        ,
+
+        .swal2-text {
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex justify-center items-center w-full px-10 font-inter" data-barba="wrapper">
+        <div class="flex justify-start items-center flex-col w-mobile h-mobile bg-[#F6F7FA]" data-barba="container"
+            data-barba-namespace="address">
+            <!-- header -->
+            <div class="flex  bg-auto bg-bottom bg-no-repeat w-full h-36" id="head"
+                style="background-image: url(../assets/bg1.svg);">
+                <div class="mt-16 flex ">
+                    <a href="./login.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                            viewBox="0 0 172 172" class="ml-[31px] mr-[94px]" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#ffffff">
+                                    <path
+                                        d="M93.16667,42.49609l-43.50391,43.50391l43.50391,43.5039l10.75,-10.75l-32.75391,-32.7539l32.75391,-32.75391z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <p class=" font-SF text-white text-xl font-semibold ">My Address</p>
+
+                </div>
+            </div>
+            <!-- contacts -->
+            <div class="flex flex-col space-y-3.5 w-80 mt-6" id="contacts">
+                <label>
+                    <span class="font-bold text-black text-sm">Contacts</span>
+                </label>
+                <input type="text" placeholder="Name" class="input py-4 pl-4 rounded-lg shadow-md">
+                <input type="text" placeholder="Email" class="input py-4 pl-4 rounded-lg shadow-md">
+            </div>
+            <!-- Address -->
+            <div class="flex flex-col space-y-3.5 w-80 mt-8" id="address">
+                <label>
+                    <span class="font-bold text-black text-sm">Address</span>
+                </label>
+                <input type="text" placeholder="State, Area" class="input py-4 pl-4 rounded-lg shadow-md">
+                <input type="text" placeholder="Postal Code" class="input py-4 pl-4 rounded-lg shadow-md">
+                <input type="text" placeholder="Detailed Address" class="input py-4 pl-4 rounded-lg shadow-md">
+            </div>
+            <!-- Settings -->
+            <div class="flex flex-col w-80 mt-8" id="settings">
+                <label>
+                    <span class="font-bold text-black text-sm">Settings</span>
+                </label>
+                <div class="flex justify-between items-center mt-3.5">
+                    <p class="justify-self-start text-sm font-normal text-[#868686]">Label As:</p>
+                    <input type="text" placeholder="Home, Office, others"
+                        class="justify-self-end text-xs input py-2 pl-2 rounded-lg shadow-md w-44">
+
+                </div>
+                <div class="flex justify-between items-center mt-7">
+                    <p class="justify-self-start text-sm font-normal text-[#868686]">Set as Default Address</p>
+
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer">
+                        <div
+                            class="w-11 h-6 bg-gray-200  rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-gradient-to-bl from-[#413B5C] to-[#B1D5D1] after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#B1D5D1]">
+                        </div>
+                    </label>
+                </div>
+
+            </div>
+            <a onclick="dataUpdated()" id="adrs_next"
+                class="w-80 rounded-full flex bg-ebid-purple py-4 items-center justify-center mt-20">
+                <button class="items center justify-center text-white font-semibold text-base">Update
+                </button>
+            </a>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" animate></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/CSSRulePlugin.min.js"
+        integrity="sha512-9BAIrJcd9W75AJsWgJTfaoRkdbk2EI92JkWWsnRx6+T8NfqrIFNrb22stBpB4ii+cbgbUG24d5BPyl4JMAw5aw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" animate></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/animate.js"></script>
+    <script>
+        function dataUpdated() {
+            Swal.fire({
+                text: 'YOUR ADDRESS HAVE BEEN UPDATED!',
+                iconHtml: '<img src="../assets/Lol.svg">',
+                width: '283px',
+                color: 'white',
+                customClass: {
+                    icon: 'no-border',
+                    text: 'swal2-text',
+                },
+                background: '#FF8E18',
+            })
+
+            const changePage = () => {
+                return window.location.href = "checkout.html"
+
+            }
+            setTimeout(
+                changePage, 2000)
+
+        }
+    </script>
+</body>
+
+</html>
